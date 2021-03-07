@@ -17,14 +17,14 @@ public class View {
         this.commands.put(c.getKey(), c);
     }
 
-    private void fillCommandsMap() {
+    private void createCommands() {
         this.addCommand(new ExitCommand("0", "Exit"));
         this.addCommand(new SortCommand("1", "Sort array(Strategy+Adapter)"));
         this.addCommand(new CameraCommand("2", "Take picture"));
     }
 
     public View() {
-        this.fillCommandsMap();
+        this.createCommands();
     }
 
     private void printMenu() {

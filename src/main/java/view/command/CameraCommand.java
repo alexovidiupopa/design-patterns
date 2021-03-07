@@ -16,11 +16,14 @@ public class CameraCommand extends Command {
 
     @Override
     public void execute() {
+        LOGGER.log("calling camera api...");
         WebcamHandler webcamHandler = new WebcamHandler();
         try {
             webcamHandler.takePicture(PATH);
+            LOGGER.log("saved picture...");
         } catch (IOException e) {
             e.printStackTrace();
+            LOGGER.log("camera api call crashed...");
         }
     }
 }
