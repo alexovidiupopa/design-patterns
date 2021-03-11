@@ -1,9 +1,6 @@
 package view;
 
-import view.command.CameraCommand;
-import view.command.Command;
-import view.command.ExitCommand;
-import view.command.SortCommand;
+import view.command.*;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -19,7 +16,7 @@ public class View {
 
     private void createCommands() {
         this.addCommand(new ExitCommand("0", "Exit"));
-        this.addCommand(new SortCommand("1", "Sort array(Strategy+Adapter)"));
+        this.addCommand(new FilterCommand("1", "Apply filter"));
         this.addCommand(new CameraCommand("2", "Take picture"));
     }
 
