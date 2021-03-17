@@ -18,6 +18,7 @@ public class View {
         this.addCommand(new ExitCommand("0", "Exit"));
         this.addCommand(new FilterCommand("1", "Apply filter"));
         this.addCommand(new CameraCommand("2", "Take picture"));
+        this.addCommand(new DecorateCommand("3", "Draw on picture"));
     }
 
     public View() {

@@ -10,8 +10,6 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 
-import static org.opencv.imgproc.Imgproc.bilateralFilter;
-
 public class GaussianFilter implements Filter{
     @Override
     public Mat apply() throws IOException {
